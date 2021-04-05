@@ -1,0 +1,9 @@
+
+
+
+|-------+--------------|
+| volts | situation    |
+|-------+--------------|
+|   0.4 | dark         |
+|     2 | room light   |
+|     3 | iphone light |
