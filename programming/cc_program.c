@@ -69,11 +69,12 @@ void init_adc(void) {
 ISR(ADC_vect) {
     if ( ADCH < 1 ) {
       OCR0B = 100;
+      TCCR0A |= (1<<COM0B1);
     } else {
       OCR0B = 0;
+      TCCR0A &= ~(1<<COM0B1);
     }    
 }
-
 
 
 int main(void) {
