@@ -68,7 +68,7 @@ void init_adc(void) {
 
 ISR(ADC_vect) {
     if ( ADCH < 1 ) {
-      OCR0B = 80;
+      OCR0B = 100;
     } else {
       OCR0B = 0;
     }    
